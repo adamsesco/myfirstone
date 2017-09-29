@@ -38,6 +38,8 @@ $router->post("/jsonM", function() use($tpl, $db){
 	$phone_number = xss_clean($_POST['phone_number']);
 	$trip_i_d = xss_clean($_POST['trip_i_d']);
 	
+	//Some updating here
+	
 	$db::insert("users", array(
 		
 		"full_name" => $full_name,
